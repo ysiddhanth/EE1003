@@ -106,7 +106,7 @@
 	\end{align}
 	By using this method iteratively $\brak{x \implies x_n \text{ and } x+h \implies x_{n+1}}$, we can numerically find all the points lying on the curve. The accuracy can be controlled by varying the stepsize or $h$.
 	\begin{align}
-		y(x_{n+1}) &= y(x_n) + h\cdot\frac{ \brak{x_n \cos\left(\frac{y_n}{x_n}\right) + y \sin\left(\frac{y_n}{x_n}\right) }y}{\brak{y_n \sin\left(\frac{y_n}{x_n}\right) - x \cos\left(\frac{y_n}{x_n}\right) }x_n} 
+		y(x_{n+1}) &= y(x_n) + h\cdot\frac{ \brak{x_n \cos\left(\frac{y_n}{x_n}\right) + y_n \sin\left(\frac{y_n}{x_n}\right) }y_n}{\brak{y_n \sin\left(\frac{y_n}{x_n}\right) - x_n \cos\left(\frac{y_n}{x_n}\right) }x_n} 
 	\end{align}
 	However, this method, with a single step, fails to plot the entire curve when there are multiple branches, discontinuities, or infinite gradients. In this specific problem, the plot consists of an infinite number of skewed hyperbolas, which are impossible to capture using the simple finite differences method.  
 	
