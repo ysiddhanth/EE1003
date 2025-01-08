@@ -90,32 +90,20 @@
 	Numerical Solution:\newline
 	The numerical solution for this question can be found using the trapezoidal rule \eqref{trap}.
 	\begin{align}
-		A  = \int_a^b f(x) \, dx \approx \frac{h}{2} \left[ f(a) + 2f(x_1) + 2f(x_2) + \dots + 2f(x_{n-1}) + f(b) \right]
-		\label{trap}
+		J &= \int_a^b f\brak{x}\, dx \approx h\brak{\frac{1}{2}f\brak{x} + f\brak{x_1} + f\brak{x_2} \cdots + f\brak{x_{n-1}} + \frac{1}{2}f\brak{b}} \label{trap}\\
+		h &= \frac{b-a}{n}\\
+				f\brak{x} &= (3x+1) - (2x+1) = x\\
+		J &= j_n, \text{ where, } j_{i + 1} = j_i + h\frac{f\brak{x_{n+1}} + f\brak{x_n}}{2}\\ 
+		\xrightarrow{} j_{i + 1} &= j_i + \frac{bh}{a}\brak{ x_{n+1} +  x_n}\label{trap2}\\
+		x_{n+1} &= x_n + k
 	\end{align}
-	Here, $h = \frac{b-a}{n}$, and $n$ is the number of nodes where $x_j$ and $a,b$ are called nodes.
-	\begin{align}
-		f\brak{x} &= (3x+1) - (2x+1) = x\\
-		A &= \int_a^b x \, dx \\ &\approx \frac{h}{2} \left[ a + 2x_1 + 2x_2 + \dots + 2x_{n-1} + b \right]
+	Taking n =100000 and applying \eqref{trap2} iteratively, we get \begin{align}
+		J &= 7.99992
 	\end{align}
-	Clearly, $a, x_j, b $ are in an A.P, where $x_i = a+ih$. Thus,
-	\begin{align}
-		A &\approx \frac{h}{2} \left[ a + \brak{2a+ h} + \brak{2a + 4h} + \dots + \brak{2a + 2(n-1)h} + \brak{a + nh} \right] \\
-		&\approx \frac{h}{2} \left[ 2na + (n-1)nh \right]
-	\end{align}
-	Apply definition of $h$ and values of $a,b$ to the above equation, we get
-	\begin{align}
-		A &\approx \frac{4}{2n} \left[ 2n(0) + (n-1)(4) \right]\\
-		A&\approx \frac{8(n-1)}{n}
-	\end{align} 
-	Clearly, as n gets larger or the number of nodes increase, the value of area approaches the theoretical value. Taking n as 100000,
-			\begin{align}
-				A &\approx 7.99992 \\ A &\approx 8
-			\end{align} 
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=\columnwidth]{figs/fig1.png}
-		\caption{Comparison between the Theoretical solution and Numerical solution}
+		\caption{Plot of the given triangle}
 		\label{stemplot}
 	\end{figure}
 \end{document}  

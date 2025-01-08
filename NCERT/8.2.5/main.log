@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.11.26)  8 JAN 2025 01:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.11.26)  8 JAN 2025 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1936,31 +1936,27 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texm
-f-dist/fonts/enc/dvips/base/8r.enc}
+)
+Underfull \vbox (badness 1817) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf
+-dist/fonts/enc/dvips/base/8r.enc}
 
 ]
 <figs/fig1.png, id=54, 462.528pt x 346.896pt>
 File: figs/fig1.png Graphic file (type png)
 <use figs/fig1.png>
-Package pdftex.def Info: figs/fig1.png  used on input line 117.
+Package pdftex.def Info: figs/fig1.png  used on input line 105.
 (pdftex.def)             Requested size: 364.1953pt x 273.16086pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2] [3 <./figs/fig1.png>] (./main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+ [2 <./figs/fig1.png>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 52642 strings out of 476041
- 1245334 string characters out of 5793173
+ 52639 strings out of 476041
+ 1245296 string characters out of 5793173
  1879388 words of memory out of 6000000
- 72247 multiletter control sequences out of 15000+600000
+ 72248 multiletter control sequences out of 15000+600000
  578817 words of font info for 167 fonts, out of 8000000 for 9000
  1140 hyphenation exceptions out of 8191
  109i,18n,107p,1194b,891s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1970,10 +1966,10 @@ exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 74988 bytes).
+Output written on main.pdf (2 pages, 74041 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
