@@ -20,7 +20,7 @@ double derivative(double x, double y){
 }
 void frontbackstepper(double x1, double y1, double h1, double h2, double n,FILE *file){
   double x0 = x1, x00 = x1, y0 = y1, y00 = y1;
-  for(int j=0.01;j<n;j++){
+  for(int j=0;j<n;j++){
           for(int i=0;i<5000;i++){
             //Setting the derivative limit, and if the limit is exceeded, it reverses the step and increases the y-value by a bit.
             if(1/derivative(x0,y0) >20) {x0-= 0.01; y0+= h2; continue;}

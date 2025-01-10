@@ -1,0 +1,18 @@
+\frametitle{$\lambda$ Verification Code}
+	\begin{lstlisting}[mathescape=true]
+double x0 = x1, x00 = x1, y0 = y1, y00 = y1;
+for(int j=0;j<n;j++){
+	for(int i=0;i<5000;i++){
+		if(1/derivative(x0,y0) >20) {x0-= 0.01; y0+= h2; continue;}
+		else {
+			x0 += ((1/derivative(x0,y0))*h2);y0 += h2;
+		}
+		if(1/derivative(x00,y00) > 20) {x00 += 0.01; y00 -= h2;continue;}
+		else {
+			x00 -= ((1/derivative(x00,y00))*h2);y00 -= h2;
+		}
+		if(x0<40 && x0>-0 && y0<40 && y0>-0) {fprintf(file, "%.02lf %.02lf\n", x0,y0);} else continue;
+		if(x00>-0 && x00<40 && y00<40 && y00>-0) { fprintf(file, "%.02lf %.02lf\n", x00,y00);} else continue;}
+	x1 -= derivative(x1,y1)*h1; y1 -= h1; x0 = x1; x00 = x1; y0 = y1; y00 = y1;
+}
+	\end{lstlisting}

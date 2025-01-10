@@ -33,11 +33,11 @@ plt.grid(color='gray', linestyle='--', linewidth=0.5)
 plt.xlabel('x')
 plt.ylabel('y')
 # Create custom legend handles
-simulation_proxy = Line2D([0], [0], marker='o', color='w', markerfacecolor='yellow', markersize=5, label='Sim')
-theoretical_proxy = Line2D([0], [0], color='black', linestyle='dashed', label='Theory')
+#simulation_proxy = Line2D([0], [0], marker='o', color='w', markerfacecolor='yellow', markersize=5, label='Sim')
+#theoretical_proxy = Line2D([0], [0], color='black', linestyle='dashed', label='Theory')
 
 # Add legend with proxy handles
-plt.legend(handles=[simulation_proxy, theoretical_proxy])
+#plt.legend(handles=[simulation_proxy, theoretical_proxy])
 plt.savefig('fig1.png')
 plt.show()
 
